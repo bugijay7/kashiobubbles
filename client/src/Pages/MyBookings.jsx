@@ -16,7 +16,7 @@ function MyBookings() {
         return;
       }
 
-      const response = await axios.get('http://localhost:3000/api/bookings/me', {
+      const response = await axios.get('https://kashiobubbles.onrender.com/api/bookings/me', {
         headers: {
           Authorization: `Bearer ${token}`,
         },

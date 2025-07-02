@@ -13,7 +13,7 @@ function Bookings() {
   useEffect(() => {
     const fetchServices = async () => {
       try {
-        const res = await axios.get('http://localhost:3000/api/services');
+        const res = await axios.get('https://kashiobubbles.onrender.com/api/services');
         setServices(res.data);
       } catch (err) {
         console.error('Error fetching services:', err);
@@ -41,7 +41,7 @@ function Bookings() {
 
     try {
       await axios.post(
-        'http://localhost:3000/api/bookings',
+        'https://kashiobubbles.onrender.com/api/bookings',
         {
           userId: user.id,
           serviceId: form.serviceId,

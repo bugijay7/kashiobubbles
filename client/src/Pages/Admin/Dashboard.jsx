@@ -11,7 +11,7 @@ function Dashboard() {
   const fetchAllBookings = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get('http://localhost:3000/api/bookings', {
+      const response = await axios.get('https://kashiobubbles.onrender.com/api/bookings', {
         headers: {
           Authorization: `Bearer ${token}`,
         },

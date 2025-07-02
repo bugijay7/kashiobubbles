@@ -13,7 +13,7 @@ function ManageUsers() {
     try {
       const token = localStorage.getItem('token');
       console.log('🔐 Token:', token);
-      const res = await axios.get('http://localhost:3000/api/admin/users', {
+      const res = await axios.get('https://kashiobubbles.onrender.com/api/admin/users', {
         headers: { Authorization: `Bearer ${token}` },
       });
       console.log('✅ Users fetched:', res.data);
@@ -37,7 +37,7 @@ function ManageUsers() {
 
     try {
       const token = localStorage.getItem('token');
-      await axios.delete(`http://localhost:3000/api/admin/users/${id}`, {
+      await axios.delete(`https://kashiobubbles.onrender.com/api/admin/users/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       console.log('✅ User deleted:', id);
@@ -61,7 +61,7 @@ function ManageUsers() {
     try {
       const token = localStorage.getItem('token');
       const response = await axios.put(
-        `http://localhost:3000/api/admin/users/${editingId}`,
+        `https://kashiobubbles.onrender.com/api/admin/users/${editingId}`,
         form,
         { headers: { Authorization: `Bearer ${token}` } }
       );

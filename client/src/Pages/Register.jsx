@@ -14,7 +14,7 @@ function Register() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:3000/api/auth/register', form);
+      const response = await axios.post('https://kashiobubbles.onrender.com/api/auth/register', form);
       const { token, user } = response.data;
 
       // Store token and user info

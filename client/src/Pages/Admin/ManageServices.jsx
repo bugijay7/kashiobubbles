@@ -9,7 +9,7 @@ function ManageServices() {
 
   const fetchServices = async () => {
     try {
-      const res = await axios.get('http://localhost:3000/api/services');
+      const res = await axios.get('https://kashiobubbles.onrender.com/api/services');
       console.log('🧺 Services:', res.data);
       setServices(res.data);
     } catch (error) {

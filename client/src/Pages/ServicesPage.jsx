@@ -8,7 +8,7 @@ function ServicesPage() {
   useEffect(() => {
     const fetchServices = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/api/services');
+        const response = await axios.get('https://kashiobubbles.onrender.com/api/services');
         if (Array.isArray(response.data)) {
           setServices(response.data);
         } else if (response.data?.services && Array.isArray(response.data.services)) {
