@@ -6,7 +6,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 // Pages
-import Home from './pages/HomePage';
+import HomePage from './pages/HomePage';
 import ServicesPage from './Pages/ServicesPage';
 import Book from './pages/Bookings';
 import MyBookings from './pages/MyBookings';
@@ -33,7 +33,7 @@ function App() {
         <main style={{ minHeight: '80vh' }}>
           <Routes>
             {/* Public Pages */}
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<HomePage />} />
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/book" element={<Book />} />
             <Route path="/my-bookings" element={<MyBookings />} />
