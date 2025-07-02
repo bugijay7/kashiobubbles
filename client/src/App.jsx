@@ -6,20 +6,20 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 // Pages
-import HomePage from './pages/HomePage';
+import HomePage from './Pages/HomePage';
 import ServicesPage from './Pages/ServicesPage';
-import Book from './pages/Bookings';
-import MyBookings from './pages/MyBookings';
-import Login from './pages/Login';
-import Register from './pages/Register';
-import About from './pages/About';
-import Contact from './pages/Contact';
+import Book from './Pages/Bookings';
+import MyBookings from './Pages/MyBookings';
+import Login from './Pages/Login';
+import Register from './Pages/Register';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
 
 // Admin Pages
 import Dashboard from './Pages/Admin/Dashboard';
-import ManageServices from './pages/Admin/ManageServices';
-import ManageBookings from './pages/Admin/ManageBookings';
-import ManageUsers from './pages/Admin/ManageUsers';
+import ManageServices from './Pages/Admin/ManageServices';
+import ManageBookings from './Pages/Admin/ManageBookings';
+import ManageUsers from './Pages/Admin/ManageUsers';
 import ScrollToTop from './components/ScrollToTop';
 
 
